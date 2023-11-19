@@ -2,7 +2,7 @@ from flask import Flask,render_template,request
 import pickle
 import numpy as np
 
-model = pickle.load(open(r'C:\Users\kanmo\Downloads\ml-model-deployment-aws-ec2-main\ml-model-deployment-aws-ec2-main\model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
